@@ -3,13 +3,17 @@ Math 590
 Project 1
 Fall 2019
 
-Partner 1: Shu Yu Lee
-Partner 2:
-Date:
+Partner 1: Shu Yu Lee   sl603
+Partner 2: Fang Feng   ff34
+Date: 10/28/2019
 """
 
 """
 SelectionSort
+
+Separate the array into a sorted component and an unsorted component.
+Iteratively search the unsorted component for the minimum element,
+then place it at the end of the sorted component
 
 Args:
   listToSort: A list to be sorted
@@ -30,6 +34,9 @@ def SelectionSort(listToSort):
 
 """
 InsertionSort
+
+Separate the array into a sorted component and an unsorted component.
+Iteratively insert the element at k + 1 into the sorted component.
 
 Args:
   listToSort: A list to be sorted
@@ -52,6 +59,9 @@ def InsertionSort(listToSort):
 """
 BubbleSort
 
+Iterate through the array. Compare every two adjacent elements.
+If they are out of order, swap them. Repeat until no more swaps are made.
+
 Args:
   listToSort: A list to be sorted
 
@@ -70,6 +80,11 @@ def BubbleSort(listToSort):
 
 """
 MergeSort
+
+Base Cases: If the array has 1 element, it is sorted.
+            If the array has 2 elements, swap if needed and return.
+Split the array into two halves. Recursively sort each half.
+Then merge the already sorted halves.
 
 Args:
   listToSort: A list to be sorted
@@ -111,6 +126,11 @@ def MergeSort(listToSort):
 
 """
 QuickSort
+
+Base Cases: If the array has 1 element, it is sorted.
+Partition the array based on the chosen pivot. Put everything smaller
+than the pivot in front and everything larger than the pivot in back.
+And recurse on each partition.
 
 Sort a list with the call QuickSort(listToSort),
 or additionally specify i and j.
