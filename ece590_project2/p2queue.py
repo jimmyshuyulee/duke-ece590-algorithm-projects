@@ -6,8 +6,8 @@ Fall 2019
 p2queue.py
 
 Partner 1: Fang Feng
-Partner 2:
-Date:
+Partner 2: Shu Yu Lee
+Date: 11/04/2019
 """
 
 """
@@ -48,12 +48,18 @@ class Queue:
     isFull function to check if the queue is full.
     """
     def isFull(self):
+        # If front and rear point to the same element, the queue is either
+        # empty or full. We can make sure the queue is full by checking that 
+        # the pointed element is not None
         return self.front == self.rear and self.queue[self.rear] is not None
 
     """
     isEmpty function to check if the queue is empty.
     """
     def isEmpty(self):
+        # If front and rear point to the same element, the queue is either
+        # empty or full. We can make sure the queue is empty by checking that 
+        # the pointed element is None
         return self.front == self.rear and self.queue[self.rear] is None
 
     """
@@ -76,6 +82,7 @@ class Queue:
         if self.isFull():
             self.resize()
         self.queue[self.rear] = val
+        # if rear is currently at the end of the list, set it to 0
         if self.rear == len(self.queue) -1:
             self.rear = 0
         else:
@@ -91,6 +98,7 @@ class Queue:
             return
         res = self.queue[self.front]
         self.queue[self.front] = None
+        # if front is currently at the end of the list, set it to 0
         if self.front == len(self.queue) - 1:
             self.front = 0
         else:

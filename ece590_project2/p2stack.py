@@ -6,8 +6,8 @@ Fall 2019
 p2stack.py
 
 Partner 1: Fang Feng
-Partner 2:
-Date:
+Partner 2: Shu Yu Lee
+Date: 11/04/2019
 """
 
 """
