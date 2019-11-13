@@ -19,8 +19,7 @@ detectArbitrage
 """
 def detectArbitrage(currencies, tol=1e-15):
     ##### Your implementation goes here. #####
-    currencies.adjList[0].dist = 0;
-    for i in range(len(currencies.adjList)-1):
+    def updateDist():
         for u in currencies.adjList:
             for neighbor in u.neigh:
                 if neighbor.dist > u.dist + \
@@ -28,14 +27,12 @@ def detectArbitrage(currencies, tol=1e-15):
                         neighbor.dist = u.dist + \
                             currencies.adjMat[u.rank][neighbor.rank]
                         neighbor.prev = u
+
+    currencies.adjList[0].dist = 0;
+    for i in range(len(currencies.adjList)-1):
+        updateDist()
     correct_dist = [v.dist for v in currencies.adjList]
-    for u in currencies.adjList:
-        for neighbor in u.neigh:
-            if neighbor.dist > u.dist + \
-                currencies.adjMat[u.rank][neighbor.rank] + tol:
-                    neighbor.dist = u.dist + \
-                        currencies.adjMat[u.rank][neighbor.rank]
-                    neighbor.prev = u
+    updateDist()
     new_dist = [v.dist for v in currencies.adjList]
 
     neg_cycle = []
