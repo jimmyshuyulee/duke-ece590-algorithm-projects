@@ -99,4 +99,4 @@ def bdfs(maze, alg):
 Main function.
 """
 if __name__ == "__main__":
-    testMazes(False)
+    testMazes(True)
