@@ -53,7 +53,7 @@ def detectArbitrage(currencies, tol=1e-15):
 
     neg_cycle = []
     for i in range(len(correct_dist)):
-        # look for the vertex which has its distance changes in the
+        # Look for the vertex which has its distance changes in the
         # additional iteration
         if correct_dist[i] - new_dist[i] > tol:
             current_vertex = currencies.adjList[i]
@@ -61,7 +61,7 @@ def detectArbitrage(currencies, tol=1e-15):
             while not current_vertex.rank in neg_cycle:
                 neg_cycle.append(current_vertex.rank)
                 current_vertex = current_vertex.prev
-            # since our starting vertex may not be in the cycle, look for
+            # Since our starting vertex may not be in the cycle, look for
             # the start of the cycle and cut off additional edges
             for j in range(len(neg_cycle)):
                 if neg_cycle[j] == current_vertex.rank:
