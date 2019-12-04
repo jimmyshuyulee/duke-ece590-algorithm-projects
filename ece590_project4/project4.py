@@ -3,9 +3,9 @@ Math 590
 Project 4
 Fall 2019
 
-Partner 1:
-Partner 2:
-Date:
+Partner 1: Shu Yu Lee
+Partner 2: Fang Feng
+Date: 12/04/2019
 """
 
 # Import math, itertools, and time.
