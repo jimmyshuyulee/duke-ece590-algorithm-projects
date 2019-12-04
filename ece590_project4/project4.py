@@ -3,8 +3,8 @@ Math 590
 Project 4
 Fall 2019
 
-Partner 1: Shu Yu Lee
-Partner 2: Fang Feng
+Partner 1: Shu Yu Lee  sl603
+Partner 2: Fang Feng  ff34
 Date: 12/04/2019
 """
 
