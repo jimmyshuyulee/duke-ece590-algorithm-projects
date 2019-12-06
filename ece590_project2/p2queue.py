@@ -71,13 +71,15 @@ class Queue:
         new_queue[: self.numElems - self.front] = self.queue[self.front:]
         new_queue[self.numElems - self.front: self.numElems] = self.queue[: self.front]
         self.queue = new_queue
+        self.first = 0
+        self.rear = self.numElems
         return
 
     """
     push function to push a value into the rear of the queue.
     """
     def push(self, val):
-        if not val:
+        if val is None:
             return
         if self.isFull():
             self.resize()
@@ -110,8 +112,11 @@ class Queue:
 def test():
     stack = Queue(3)
     print(stack.isEmpty())
-    stack.push(9)
+    stack.push(1)
+    print(stack)
+    stack.push(2)
     stack.push(3)
+    stack.push(4)
     print(stack)
     print(stack.pop())
     print(stack.pop())

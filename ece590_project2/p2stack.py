@@ -69,7 +69,7 @@ class Stack:
     push function to push a value onto the stack.
     """
     def push(self, val):
-        if not val:
+        if val is None:
             return
         if self.isFull():
             self.resize()
@@ -94,8 +94,10 @@ class Stack:
 def test():
     stack = Stack(3)
     print(stack.isEmpty())
-    stack.push(9)
+    stack.push(1)
+    stack.push(2)
     stack.push(3)
+    stack.push(4)
     print(stack.stack)
     print(stack.pop())
     print(stack.pop())
