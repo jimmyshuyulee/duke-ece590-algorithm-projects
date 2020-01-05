@@ -1,4 +1,4 @@
-## Ece590 Project2 DFS/BFS
+##ece590_project2 DFS/BFS
 
 We completed three tasks in this project:
 

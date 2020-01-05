@@ -3,7 +3,13 @@ This repositary includes 4 projects for Duke ECE590 - Algorithm.
 
 ## Project 1: Sorting  
 #### Link: [ece590_project1](https://github.com/jimmyshuyulee/ece590_algorithm_projects/tree/master/ece590_project1)  
-In this project, we implemented 5 different sorting algorithms.
+In this project, we implemented the following 5 different sorting algorithms.
+
+- Selection Sort
+- Insertion Sort
+- Bubble Sort
+- Merge Sort
+- Quick Sort
 
 ## Project 2: DFS/BFS  
 #### Link: [ece590_project2](https://github.com/jimmyshuyulee/ece590_algorithm_projects/tree/master/ece590_project2)  

@@ -1,4 +1,4 @@
-## Ece590 Project4 MST/TSP
+## ece590_project4 MST/TSP
 
 We completed three tasks in this project:
 

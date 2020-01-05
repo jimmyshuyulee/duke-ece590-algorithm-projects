@@ -1,4 +1,5 @@
-##Ece590 Project1 Sorting
+##ece590_project1 Sorting
+
 We implement the following **five** algorithms as discussed in class:
 - Selection Sort- Insertion Sort- Bubble Sort- Merge Sort- Quick Sort
 
