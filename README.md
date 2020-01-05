@@ -1,6 +1,16 @@
 # ece590_algorithm_projects
 This repositary includes 4 projects for Duke ECE590 - Algorithm.
 
+## Environment
+
+All of the projects are developed under pipenv and the Pipfile is provided. To set up the environment, simply execute:
+
+```
+pipenv install
+```
+
+This will install required packages for all the four projects under pipenv.
+
 ## Project 1: Sorting  
 #### Link: [ece590_project1](https://github.com/jimmyshuyulee/ece590_algorithm_projects/tree/master/ece590_project1)  
 In this project, we implemented the following 5 different sorting algorithms.
@@ -25,3 +35,8 @@ set of exchange rates between currencies.
 In this project, we implemented both Prim’s and Kruskal’s algorithms for finding a Minimum
 Spanning Tree. We then use that MST to approximate the solution for the Traveling Salesman
 Problem.
+
+## Authors
+
+- **Shu Yu Lee** - *Initial work* - [jimmyshuyulee](https://github.com/jimmyshuyulee)
+- **Fang Feng** - *Initial work* - [FangFeng-077](https://github.com/FangFeng-077)
