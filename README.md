@@ -1,5 +1,5 @@
 # Duke ECE590 Algorithm Projects
-This repositary includes 4 projects for Duke ECE590 - Algorithm.
+This repositary includes 4 projects for Duke ECE590 - Algorithm course.
 
 ## Environment
 
